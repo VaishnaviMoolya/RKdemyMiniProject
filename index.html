@@ -1,0 +1,2971 @@
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JobConnect</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+          crossorigin="anonymous">
+
+</head>
+
+<body>
+
+
+<!-- ========================================================= -->
+<!-- NAVBAR -->
+<!-- ========================================================= -->
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+    <div class="container-fluid">
+
+        <a class="navbar-brand fw-bold"
+           >
+          <img src="Logo.png"  style="width: 60px; height: 60px; object-fit: contain;"> 
+
+        </a>
+
+
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+
+        <div class="collapse navbar-collapse"
+             id="navbarSupportedContent">
+
+
+            <!-- NAVIGATION -->
+
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+
+                <!-- HOME -->
+
+                <li class="nav-item">
+
+                    <a class="nav-link active"
+                       href="#"
+                       onclick="showPage('home')">
+
+                        Home
+
+                    </a>
+
+                </li>
+
+
+                <!-- JOBS -->
+
+                <li class="nav-item">
+
+                    <a class="nav-link"
+                       href="#"
+                       onclick="showPage('jobs')">
+
+                        Jobs
+
+                    </a>
+
+                </li>
+
+
+                <!-- COMPANIES -->
+
+                <li class="nav-item">
+
+                    <a class="nav-link"
+                       href="#"
+                       onclick="showPage('companies')">
+
+                        Companies
+
+                    </a>
+
+                </li>
+
+
+                <!-- ABOUT US -->
+
+                <li class="nav-item">
+
+                    <a class="nav-link"
+                       href="#"
+                       onclick="showPage('about')">
+
+                        About Us
+
+                    </a>
+
+                </li>
+
+
+                <!-- CONTACT -->
+
+                <li class="nav-item">
+
+                    <a class="nav-link"
+                       href="#"
+                       onclick="showPage('contact')">
+
+                        Contact
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+
+            <!-- SEARCH -->
+
+            <form class="d-flex"
+                  role="search"
+                  onsubmit="return false;">
+
+                <input class="form-control me-2"
+                       type="search"
+                       placeholder="Search"
+                       aria-label="Search">
+
+                <button class="btn btn-outline-success"
+                        type="submit">
+
+                    Search
+
+                </button>
+
+            </form>
+
+
+            <!-- REGISTER -->
+
+            <a href="#"
+               class="btn btn-success ms-2"
+               onclick="showPage('register')">
+
+                Register
+
+            </a>
+
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+
+<!-- ========================================================= -->
+<!-- HOME PAGE -->
+<!-- ========================================================= -->
+
+<section id="home" class="page-section">
+
+
+    <!-- Popular Job Categories -->
+
+    <section class="container my-5">
+        <h1 class="text-center fw-bold mb-4">Welcome to JobConnect</h1>
+        <h2 class="text-center fw-bold mb-4">
+
+            Popular Job Categories
+
+        </h2>
+
+
+        <div class="row g-4">
+
+
+            <!-- IT -->
+
+            <div class="col-md-3">
+
+                <div class="card text-center h-100">
+
+                    <div class="card-body">
+
+                        <h2>💻</h2>
+
+                        <h5 class="card-title">
+
+                            IT & Software
+
+                        </h5>
+
+                        <p class="card-text">
+
+                            120+ Jobs
+
+                        </p>
+
+                        <a href="#"
+                           onclick="showPage('jobs')"
+                           class="btn btn-primary">
+
+                            View Jobs
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- FINANCE -->
+
+            <div class="col-md-3">
+
+                <div class="card text-center h-100">
+
+                    <div class="card-body">
+
+                        <h2>📊</h2>
+
+                        <h5 class="card-title">
+
+                            Finance
+
+                        </h5>
+
+                        <p class="card-text">
+
+                            80+ Jobs
+
+                        </p>
+
+                        <a href="#"
+                           onclick="showPage('jobs')"
+                           class="btn btn-primary">
+
+                            View Jobs
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- MARKETING -->
+
+            <div class="col-md-3">
+
+                <div class="card text-center h-100">
+
+                    <div class="card-body">
+
+                        <h2>📢</h2>
+
+                        <h5 class="card-title">
+
+                            Marketing
+
+                        </h5>
+
+                        <p class="card-text">
+
+                            60+ Jobs
+
+                        </p>
+
+                        <a href="#"
+                           onclick="showPage('jobs')"
+                           class="btn btn-primary">
+
+                            View Jobs
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- DESIGN -->
+
+            <div class="col-md-3">
+
+                <div class="card text-center h-100">
+
+                    <div class="card-body">
+
+                        <h2>🎨</h2>
+
+                        <h5 class="card-title">
+
+                            Design
+
+                        </h5>
+
+                        <p class="card-text">
+
+                            50+ Jobs
+
+                        </p>
+
+                        <a href="#"
+                           onclick="showPage('jobs')"
+                           class="btn btn-primary">
+
+                            View Jobs
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Featured Jobs -->
+
+    <section class="bg-light py-5">
+
+        <div class="container">
+
+            <h2 class="text-center fw-bold mb-4">
+
+                Featured Jobs
+
+            </h2>
+
+
+            <div class="row g-4">
+
+
+                <!-- JOB 1 -->
+
+                <div class="col-md-4">
+
+                    <div class="card h-100">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+
+                                Frontend Developer
+
+                            </h5>
+
+                            <h6 class="text-primary">
+
+                                Tech Solutions Pvt. Ltd.
+
+                            </h6>
+
+                            <p>📍 Mumbai</p>
+
+                            <p>💰 ₹4 - ₹6 LPA</p>
+
+                            <span class="badge bg-success">
+
+                                Full Time
+
+                            </span>
+
+                            <a href="#"
+                               onclick="showPage('jobs')"
+                               class="btn btn-outline-primary w-100 mt-3">
+
+                                View Details
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- JOB 2 -->
+
+                <div class="col-md-4">
+
+                    <div class="card h-100">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+
+                                Java Developer
+
+                            </h5>
+
+                            <h6 class="text-primary">
+
+                                TATA Technologies
+
+                            </h6>
+
+                            <p>📍 Pune</p>
+
+                            <p>💰 ₹5 - ₹8 LPA</p>
+
+                            <span class="badge bg-success">
+
+                                Full Time
+
+                            </span>
+
+                            <a href="#"
+                               onclick="showPage('jobs')"
+                               class="btn btn-outline-primary w-100 mt-3">
+
+                                View Details
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- JOB 3 -->
+
+                <div class="col-md-4">
+
+                    <div class="card h-100">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+
+                                UI/UX Designer
+
+                            </h5>
+
+                            <h6 class="text-primary">
+
+                                Creative Studio
+
+                            </h6>
+
+                            <p>📍 Bangalore</p>
+
+                            <p>💰 ₹3 - ₹5 LPA</p>
+
+                            <span class="badge bg-warning text-dark">
+
+                                Internship
+
+                            </span>
+
+                            <a href="#"
+                               onclick="showPage('jobs')"
+                               class="btn btn-outline-primary w-100 mt-3">
+
+                                View Details
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- HOME FOOTER -->
+
+    <footer class="bg-dark text-white text-center py-4">
+
+        <div class="container">
+
+            <h5>JobPortal</h5>
+
+            <p>
+
+                Find your dream job and build your career.
+
+            </p>
+
+            <p class="mb-0">
+
+                © 2026 JobPortal. All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+</section>
+
+
+
+<!-- ========================================================= -->
+<!-- JOBS PAGE -->
+<!-- ========================================================= -->
+
+<section id="jobs" class="page-section d-none">
+
+
+    <!-- JOB HEADER -->
+
+    <section class="bg-light py-5">
+
+        <div class="container">
+
+            <h1 class="text-center fw-bold">
+
+                Find Your Dream Job
+
+            </h1>
+
+            <p class="text-center text-muted">
+
+                Search for jobs based on your skills and location.
+
+            </p>
+
+
+            <div class="row justify-content-center mt-4">
+
+
+                <div class="col-md-5 mb-2">
+
+                    <input type="text"
+                           class="form-control form-control-lg"
+                           placeholder="Job title, skills or keywords">
+
+                </div>
+
+
+                <div class="col-md-4 mb-2">
+
+                    <input type="text"
+                           class="form-control form-control-lg"
+                           placeholder="Location">
+
+                </div>
+
+
+                <div class="col-md-2 mb-2">
+
+                    <button class="btn btn-primary btn-lg w-100">
+
+                        Search
+
+                    </button>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- JOB LIST -->
+
+    <section class="container my-5">
+
+        <div class="row">
+
+
+            <div class="col-lg-8">
+
+                <h2 class="fw-bold mb-4">
+
+                    Available Jobs
+
+                </h2>
+
+
+                <!-- JOB 1 -->
+
+                <div class="card mb-4 shadow-sm">
+
+                    <div class="card-body">
+
+                        <h4 class="card-title">
+
+                            Frontend Developer
+
+                        </h4>
+
+                        <h6 class="text-primary">
+
+                            Tech Solutions Pvt. Ltd.
+
+                        </h6>
+
+                        <p class="mb-2">📍 Mumbai</p>
+
+                        <p class="mb-2">💰 ₹4 - ₹6 LPA</p>
+
+                        <p>
+
+                            Looking for a frontend developer
+                            with knowledge of HTML, CSS,
+                            JavaScript, Bootstrap and React.
+
+                        </p>
+
+                        <span class="badge bg-success">
+
+                            Full Time
+
+                        </span>
+
+                        <button class="btn btn-outline-primary float-end"
+                                onclick="alert('Job details for Frontend Developer')">
+
+                            View Details
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- JOB 2 -->
+
+                <div class="card mb-4 shadow-sm">
+
+                    <div class="card-body">
+
+                        <h4 class="card-title">
+
+                            Java Developer
+
+                        </h4>
+
+                        <h6 class="text-primary">
+
+                            ABC Technologies
+
+                        </h6>
+
+                        <p class="mb-2">📍 Pune</p>
+
+                        <p class="mb-2">💰 ₹5 - ₹8 LPA</p>
+
+                        <p>
+
+                            Looking for a Java developer
+                            with knowledge of Core Java,
+                            JDBC and MySQL.
+
+                        </p>
+
+                        <span class="badge bg-success">
+
+                            Full Time
+
+                        </span>
+
+                        <button class="btn btn-outline-primary float-end"
+                                onclick="alert('Job details for Java Developer')">
+
+                            View Details
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- JOB 3 -->
+
+                <div class="card mb-4 shadow-sm">
+
+                    <div class="card-body">
+
+                        <h4 class="card-title">
+
+                            UI/UX Designer
+
+                        </h4>
+
+                        <h6 class="text-primary">
+
+                            Creative Studio
+
+                        </h6>
+
+                        <p class="mb-2">📍 Bangalore</p>
+
+                        <p class="mb-2">💰 ₹3 - ₹5 LPA</p>
+
+                        <p>
+
+                            Looking for a creative UI/UX designer
+                            with knowledge of Figma and
+                            user interface design.
+
+                        </p>
+
+                        <span class="badge bg-warning text-dark">
+
+                            Internship
+
+                        </span>
+
+                        <button class="btn btn-outline-primary float-end"
+                                onclick="alert('Job details for UI/UX Designer')">
+
+                            View Details
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- JOB 4 -->
+
+                <div class="card mb-4 shadow-sm">
+
+                    <div class="card-body">
+
+                        <h4 class="card-title">
+
+                            Data Analyst
+
+                        </h4>
+
+                        <h6 class="text-primary">
+
+                            DataCorp
+
+                        </h6>
+
+                        <p class="mb-2">📍 Mumbai</p>
+
+                        <p class="mb-2">💰 ₹5 - ₹7 LPA</p>
+
+                        <p>
+
+                            Looking for a Data Analyst with
+                            SQL, Excel and data visualization
+                            skills.
+
+                        </p>
+
+                        <span class="badge bg-success">
+
+                            Full Time
+
+                        </span>
+
+                        <button class="btn btn-outline-primary float-end"
+                                onclick="alert('Job details for Data Analyst')">
+
+                            View Details
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- FILTER -->
+
+            <div class="col-lg-4">
+
+                <div class="card shadow-sm">
+
+                    <div class="card-body">
+
+                        <h4 class="fw-bold mb-4">
+
+                            Filter Jobs
+
+                        </h4>
+
+
+                        <h6>Job Type</h6>
+
+
+                        <div class="form-check">
+
+                            <input class="form-check-input"
+                                   type="checkbox"
+                                   id="fulltime">
+
+                            <label class="form-check-label"
+                                   for="fulltime">
+
+                                Full Time
+
+                            </label>
+
+                        </div>
+
+
+                        <div class="form-check">
+
+                            <input class="form-check-input"
+                                   type="checkbox"
+                                   id="parttime">
+
+                            <label class="form-check-label"
+                                   for="parttime">
+
+                                Part Time
+
+                            </label>
+
+                        </div>
+
+
+                        <div class="form-check">
+
+                            <input class="form-check-input"
+                                   type="checkbox"
+                                   id="internship">
+
+                            <label class="form-check-label"
+                                   for="internship">
+
+                                Internship
+
+                            </label>
+
+                        </div>
+
+
+                        <hr>
+
+
+                        <h6>Location</h6>
+
+
+                        <div class="form-check">
+
+                            <input class="form-check-input"
+                                   type="checkbox"
+                                   id="mumbai">
+
+                            <label class="form-check-label"
+                                   for="mumbai">
+
+                                Mumbai
+
+                            </label>
+
+                        </div>
+
+
+                        <div class="form-check">
+
+                            <input class="form-check-input"
+                                   type="checkbox"
+                                   id="pune">
+
+                            <label class="form-check-label"
+                                   for="pune">
+
+                                Pune
+
+                            </label>
+
+                        </div>
+
+
+                        <div class="form-check">
+
+                            <input class="form-check-input"
+                                   type="checkbox"
+                                   id="bangalore">
+
+                            <label class="form-check-label"
+                                   for="bangalore">
+
+                                Bangalore
+
+                            </label>
+
+                        </div>
+
+
+                        <hr>
+
+
+                        <h6>Experience</h6>
+
+
+                        <select class="form-select">
+
+                            <option selected>
+
+                                Select Experience
+
+                            </option>
+
+                            <option>Fresher</option>
+
+                            <option>1-2 Years</option>
+
+                            <option>3-5 Years</option>
+
+                            <option>5+ Years</option>
+
+                        </select>
+
+
+                        <button class="btn btn-primary w-100 mt-4">
+
+                            Apply Filters
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <footer class="bg-dark text-white text-center py-4">
+
+        <div class="container">
+
+            <h5>JobPortal</h5>
+
+            <p>
+
+                Find your dream job and build your career.
+
+            </p>
+
+            <p class="mb-0">
+
+                © 2026 JobPortal. All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+</section>
+
+
+
+<!-- ========================================================= -->
+<!-- COMPANIES PAGE -->
+<!-- ========================================================= -->
+
+<section id="companies" class="page-section d-none">
+
+
+    <section class="bg-light py-5">
+
+        <div class="container text-center">
+
+            <h1 class="fw-bold">
+
+                Top Companies
+
+            </h1>
+
+            <p class="text-muted">
+
+                Explore companies, job opportunities and fresher salaries.
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section class="container my-5">
+
+        <div class="row g-4">
+
+
+            <!-- TCS -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card h-100 shadow-sm">
+
+                    <div class="card-body p-4">
+
+                        <div class="text-center">
+
+                            <div class="display-4 mb-3">
+				          <img src="TCS.jpeg" style="width: 80px; height: 80px; object-fit: contain;">
+
+							</div>
+
+                            <h3 class="fw-bold">TCS</h3>
+
+                            <p class="text-primary fw-semibold">
+
+                                Tata Consultancy Services
+
+                            </p>
+
+                        </div>
+
+                        <hr>
+
+                        <p><strong>Industry:</strong>
+                            IT Services & Consulting
+                        </p>
+
+                        <p><strong>Employees:</strong>
+                            593,798
+                        </p>
+
+                        <p><strong>Headquarters:</strong>
+                            Mumbai, Maharashtra
+                        </p>
+
+                        <p><strong>Fresher Posts:</strong></p>
+
+                        <ul>
+
+                            <li>Software Engineer</li>
+                            <li>System Engineer</li>
+                            <li>Developer</li>
+                            <li>Data Engineer</li>
+
+                        </ul>
+
+                        <p><strong>Indicative Fresher CTC:</strong></p>
+
+                        <span class="badge bg-success mb-3">
+
+                            ₹3.4 LPA - ₹9.3 LPA+
+
+                        </span>
+
+                        <p class="small text-muted">
+
+                            Salary varies according to the TCS
+                            hiring track and candidate profile.
+
+                        </p>
+
+                        <button onclick="showPage('jobs')"
+                                class="btn btn-primary w-100">
+
+                            View Jobs
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- INFOSYS -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card h-100 shadow-sm">
+
+                    <div class="card-body p-4">
+
+                        <div class="text-center">
+
+                            <div class="display-4 mb-3">
+							 <img src="Infosys.png" style="width: 100px; height: 100px; object-fit: contain;">
+							</div>
+
+                            <h3 class="fw-bold">Infosys</h3>
+
+                            <p class="text-primary fw-semibold">
+
+                                IT Services & Consulting
+
+                            </p>
+
+                        </div>
+
+                        <hr>
+
+                        <p><strong>Industry:</strong>
+                            IT Services & Consulting
+                        </p>
+
+                        <p><strong>Employees:</strong>
+                            328,594
+                        </p>
+
+                        <p><strong>Major Locations:</strong>
+                            Pune, Bengaluru, Hyderabad
+                        </p>
+
+                        <p><strong>Fresher Posts:</strong></p>
+
+                        <ul>
+
+                            <li>Systems Engineer</li>
+                            <li>Software Developer</li>
+                            <li>Data Engineer</li>
+                            <li>Cloud Engineer</li>
+
+                        </ul>
+
+                        <p><strong>Indicative Fresher CTC:</strong></p>
+
+                        <span class="badge bg-success mb-3">
+
+                            ₹3.5 LPA - ₹6.5 LPA+
+
+                        </span>
+
+                        <p class="small text-muted">
+
+                            Compensation varies by role,
+                            hiring program and location.
+
+                        </p>
+
+                        <button onclick="showPage('jobs')"
+                                class="btn btn-primary w-100">
+
+                            View Jobs
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- WIPRO -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card h-100 shadow-sm">
+
+                    <div class="card-body p-4">
+
+                        <div class="text-center">
+
+                            <div class="display-4 mb-3">
+							    <img src="Wipro.webp" style="width: 100px; height: 100px; object-fit: contain;">
+
+							</div>
+
+                            <h3 class="fw-bold">Wipro</h3>
+
+                            <p class="text-primary fw-semibold">
+
+                                Technology Services
+
+                            </p>
+
+                        </div>
+
+                        <hr>
+
+                        <p><strong>Industry:</strong>
+                            IT Services & Consulting
+                        </p>
+
+                        <p><strong>Employees:</strong>
+                            230,000+
+                        </p>
+
+                        <p><strong>Major Locations:</strong>
+                            Bengaluru, Pune, Hyderabad
+                        </p>
+
+                        <p><strong>Fresher Posts:</strong></p>
+
+                        <ul>
+
+                            <li>Graduate Engineer Trainee</li>
+                            <li>Project Engineer</li>
+                            <li>Software Engineer</li>
+                            <li>Test Engineer</li>
+
+                        </ul>
+
+                        <p><strong>Indicative Fresher CTC:</strong></p>
+
+                        <span class="badge bg-success mb-3">
+
+                            ₹3.5 LPA - ₹6.5 LPA+
+
+                        </span>
+
+                        <p class="small text-muted">
+
+                            Fresher compensation depends on
+                            the specific hiring program.
+
+                        </p>
+
+                        <button onclick="showPage('jobs')"
+                                class="btn btn-primary w-100">
+
+                            View Jobs
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ACCENTURE -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card h-100 shadow-sm">
+
+                    <div class="card-body p-4">
+
+                        <div class="text-center">
+
+                            <div class="display-4 mb-3">
+						 <img src="Accenture.png" style="width: 100px; height: 100px; object-fit: contain;">
+
+							</div>
+
+                            <h3 class="fw-bold">Accenture</h3>
+
+                            <p class="text-primary fw-semibold">
+
+                                Consulting & Technology
+
+                            </p>
+
+                        </div>
+
+                        <hr>
+
+                        <p><strong>Industry:</strong>
+                            Consulting & Technology
+                        </p>
+
+                        <p><strong>Employees:</strong>
+                            569,000
+                        </p>
+
+                        <p><strong>Major Locations:</strong>
+                            Mumbai, Pune, Bengaluru
+                        </p>
+
+                        <p><strong>Fresher Posts:</strong></p>
+
+                        <ul>
+
+                            <li>Application Development Associate</li>
+                            <li>Software Engineer</li>
+                            <li>Cloud Support Associate</li>
+                            <li>Security Associate</li>
+
+                        </ul>
+
+                        <p><strong>Indicative Fresher CTC:</strong></p>
+
+                        <span class="badge bg-success mb-3">
+
+                            Role dependent
+
+                        </span>
+
+                        <p class="small text-muted">
+
+                            Accenture has multiple graduate roles,
+                            so salary varies according to the position.
+
+                        </p>
+
+                        <button onclick="showPage('jobs')"
+                                class="btn btn-primary w-100">
+
+                            View Jobs
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- HCLTECH -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card h-100 shadow-sm">
+
+                    <div class="card-body p-4">
+
+                        <div class="text-center">
+
+                            <div class="display-4 mb-3">
+							      <img src="HCLTech.png" style="width: 100px; height: 100px; object-fit: contain;">
+
+							</div>
+
+                            <h3 class="fw-bold">HCLTech</h3>
+
+                            <p class="text-primary fw-semibold">
+
+                                IT Services & Technology
+
+                            </p>
+
+                        </div>
+
+                        <hr>
+
+                        <p><strong>Industry:</strong>
+                            IT Services & Technology
+                        </p>
+
+                        <p><strong>Employees:</strong>
+                            223,000+
+                        </p>
+
+                        <p><strong>Major Locations:</strong>
+                            Noida, Chennai, Bengaluru
+                        </p>
+
+                        <p><strong>Fresher Posts:</strong></p>
+
+                        <ul>
+
+                            <li>Graduate Engineer Trainee</li>
+                            <li>Java Developer</li>
+                            <li>Software Engineer</li>
+                            <li>Cloud Engineer</li>
+
+                        </ul>
+
+                        <p><strong>Indicative Fresher CTC:</strong></p>
+
+                        <span class="badge bg-success mb-3">
+
+                            Around ₹4.25 LPA+
+
+                        </span>
+
+                        <p class="small text-muted">
+
+                            Specialist roles may have different
+                            compensation packages.
+
+                        </p>
+
+                        <button onclick="showPage('jobs')"
+                                class="btn btn-primary w-100">
+
+                            View Jobs
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- TECH MAHINDRA -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card h-100 shadow-sm">
+
+                    <div class="card-body p-4">
+
+                        <div class="text-center">
+
+                            <div class="display-4 mb-3">
+						 <img src="TechMahindra.jpg"  style="width: 100px; height: 100px; object-fit: contain;"> 
+
+							</div>
+
+                            <h3 class="fw-bold">Tech Mahindra</h3>
+
+                            <p class="text-primary fw-semibold">
+
+                                IT Services & Consulting
+
+                            </p>
+
+                        </div>
+
+                        <hr>
+
+                        <p><strong>Industry:</strong>
+                            Technology & Digital Solutions
+                        </p>
+
+                        <p><strong>Employees:</strong>
+                            146,760
+                        </p>
+
+                        <p><strong>Major Locations:</strong>
+                            Pune, Hyderabad, Bengaluru
+                        </p>
+
+                        <p><strong>Fresher Posts:</strong></p>
+
+                        <ul>
+
+                            <li>Junior Software Engineer</li>
+                            <li>Software Engineer</li>
+                            <li>Test Engineer</li>
+                            <li>Support Engineer</li>
+
+                        </ul>
+
+                        <p><strong>Indicative Fresher CTC:</strong></p>
+
+                        <span class="badge bg-success mb-3">
+
+                            Role dependent
+
+                        </span>
+
+                        <p class="small text-muted">
+
+                            Salary depends on the role,
+                            hiring drive and candidate profile.
+
+                        </p>
+
+                        <button onclick="showPage('jobs')"
+                                class="btn btn-primary w-100">
+
+                            View Jobs
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <section class="container mb-5">
+
+        <div class="alert alert-info">
+
+            <strong>Note:</strong>
+
+            Employee numbers and salary information are
+            indicative and can change over time.
+            Fresher salary depends on the job role,
+            hiring program, location and candidate profile.
+
+        </div>
+
+    </section>
+
+
+    <footer class="bg-dark text-white text-center p-4">
+
+        <p class="mb-1">
+
+            © 2026 JobPortal. All Rights Reserved.
+
+        </p>
+
+        <p class="mb-0">
+
+            Find your dream job with JobPortal.
+
+        </p>
+
+    </footer>
+
+</section>
+
+
+
+<!-- ========================================================= -->
+<!-- ABOUT US PAGE -->
+<!-- ========================================================= -->
+
+<section id="about" class="page-section d-none">
+
+
+    <!-- HEADER -->
+
+    <section class="bg-light py-5">
+
+        <div class="container text-center">
+
+            <h1 class="fw-bold">
+
+                About JobPortal
+
+            </h1>
+
+            <p class="text-muted">
+
+                Connecting talented people with the right
+                career opportunities.
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- WHO WE ARE -->
+
+    <section class="container my-5">
+
+        <div class="row align-items-center">
+
+
+            <div class="col-lg-6 mb-4">
+
+                <h2 class="fw-bold mb-3">
+
+                    Who We Are
+
+                </h2>
+
+                <p>
+
+                    JobPortal is an online job-search platform
+                    designed to help job seekers discover
+                    suitable employment opportunities.
+
+                </p>
+
+                <p>
+
+                    Our platform brings job seekers and
+                    employers together in one place. Users
+                    can search for jobs, explore companies,
+                    view job categories and learn about
+                    different career opportunities.
+
+                </p>
+
+                <p>
+
+                    JobPortal provides opportunities for
+                    freshers, experienced professionals,
+                    part-time workers and people looking
+                    for work-from-home jobs.
+
+                </p>
+
+            </div>
+
+
+            <div class="col-lg-6 text-center">
+
+                <div class="display-1">💼</div>
+
+                <h3 class="fw-bold mt-3">
+
+                    Find. Apply. Grow.
+
+                </h3>
+
+                <p class="text-muted">
+
+                    Your career journey starts here.
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- MISSION & VISION -->
+
+    <section class="bg-light py-5">
+
+        <div class="container">
+
+            <div class="row g-4">
+
+
+                <div class="col-md-6">
+
+                    <div class="card h-100 shadow-sm">
+
+                        <div class="card-body p-4 text-center">
+
+                            <div class="display-4 mb-3">🎯</div>
+
+                            <h3 class="fw-bold">
+
+                                Our Mission
+
+                            </h3>
+
+                            <p>
+
+                                Our mission is to simplify the
+                                job-search process by providing
+                                job seekers with an easy-to-use
+                                platform where they can discover
+                                relevant career opportunities.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6">
+
+                    <div class="card h-100 shadow-sm">
+
+                        <div class="card-body p-4 text-center">
+
+                            <div class="display-4 mb-3">🚀</div>
+
+                            <h3 class="fw-bold">
+
+                                Our Vision
+
+                            </h3>
+
+                            <p>
+
+                                Our vision is to build a trusted
+                                platform that connects talented
+                                individuals with organizations
+                                and helps people move towards
+                                meaningful careers.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- WHAT WE OFFER -->
+
+    <section class="container my-5">
+
+        <div class="text-center mb-5">
+
+            <h2 class="fw-bold">
+
+                What We Offer
+
+            </h2>
+
+            <p class="text-muted">
+
+                Everything you need for your job search.
+
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="card h-100 text-center shadow-sm">
+
+                    <div class="card-body">
+
+                        <div class="display-5 mb-3">🔍</div>
+
+                        <h5 class="fw-bold">
+
+                            Job Search
+
+                        </h5>
+
+                        <p>
+
+                            Search for jobs based on
+                            keywords, location and category.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="card h-100 text-center shadow-sm">
+
+                    <div class="card-body">
+
+                        <div class="display-5 mb-3">🏢</div>
+
+                        <h5 class="fw-bold">
+
+                            Company Information
+
+                        </h5>
+
+                        <p>
+
+                            Explore companies, their
+                            industries and career opportunities.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="card h-100 text-center shadow-sm">
+
+                    <div class="card-body">
+
+                        <div class="display-5 mb-3">📂</div>
+
+                        <h5 class="fw-bold">
+
+                            Job Categories
+
+                        </h5>
+
+                        <p>
+
+                            Find IT, government, part-time
+                            and work-from-home opportunities.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="card h-100 text-center shadow-sm">
+
+                    <div class="card-body">
+
+                        <div class="display-5 mb-3">📈</div>
+
+                        <h5 class="fw-bold">
+
+                            Career Growth
+
+                        </h5>
+
+                        <p>
+
+                            Discover opportunities that
+                            support your professional growth.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- WHY CHOOSE US -->
+
+    <section class="bg-light py-5">
+
+        <div class="container">
+
+            <div class="text-center mb-5">
+
+                <h2 class="fw-bold">
+
+                    Why Choose JobPortal?
+
+                </h2>
+
+            </div>
+
+
+            <div class="row g-4">
+
+
+                <div class="col-md-4">
+
+                    <div class="text-center">
+
+                        <div class="display-5 mb-3">⚡</div>
+
+                        <h5 class="fw-bold">
+
+                            Easy to Use
+
+                        </h5>
+
+                        <p>
+
+                            Simple and user-friendly interface
+                            for searching and exploring jobs.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <div class="text-center">
+
+                        <div class="display-5 mb-3">🎓</div>
+
+                        <h5 class="fw-bold">
+
+                            Fresher Friendly
+
+                        </h5>
+
+                        <p>
+
+                            Find opportunities suitable for
+                            fresh graduates and students.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <div class="text-center">
+
+                        <div class="display-5 mb-3">🌐</div>
+
+                        <h5 class="fw-bold">
+
+                            Multiple Opportunities
+
+                        </h5>
+
+                        <p>
+
+                            Explore jobs across different
+                            industries, locations and categories.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- STATISTICS -->
+
+    <section class="container my-5">
+
+        <div class="text-center mb-4">
+
+            <h2 class="fw-bold">
+
+                JobPortal at a Glance
+
+            </h2>
+
+        </div>
+
+
+        <div class="row text-center g-4">
+
+
+            <div class="col-md-3">
+
+                <div class="card shadow-sm">
+
+                    <div class="card-body">
+
+                        <h2 class="fw-bold text-primary">
+
+                            100+
+
+                        </h2>
+
+                        <p class="mb-0">
+
+                            Job Listings
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-3">
+
+                <div class="card shadow-sm">
+
+                    <div class="card-body">
+
+                        <h2 class="fw-bold text-primary">
+
+                            50+
+
+                        </h2>
+
+                        <p class="mb-0">
+
+                            Companies
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-3">
+
+                <div class="card shadow-sm">
+
+                    <div class="card-body">
+
+                        <h2 class="fw-bold text-primary">
+
+                            4
+
+                        </h2>
+
+                        <p class="mb-0">
+
+                            Job Categories
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-3">
+
+                <div class="card shadow-sm">
+
+                    <div class="card-body">
+
+                        <h2 class="fw-bold text-primary">
+
+                            24/7
+
+                        </h2>
+
+                        <p class="mb-0">
+
+                            Online Access
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- CTA -->
+
+    <section class="bg-primary text-white py-5">
+
+        <div class="container text-center">
+
+            <h2 class="fw-bold">
+
+                Ready to Find Your Dream Job?
+
+            </h2>
+
+            <p>
+
+                Explore available opportunities and
+                take the next step in your career.
+
+            </p>
+
+            <button onclick="showPage('jobs')"
+                    class="btn btn-light btn-lg">
+
+                Explore Jobs
+
+            </button>
+
+            <button onclick="showPage('register')"
+                    class="btn btn-outline-light btn-lg ms-2">
+
+                Create Account
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <footer class="bg-dark text-white text-center p-4">
+
+        <p class="mb-1">
+
+            © 2026 JobPortal. All Rights Reserved.
+
+        </p>
+
+        <p class="mb-0">
+
+            Find your dream job with JobPortal.
+
+        </p>
+
+    </footer>
+
+</section>
+
+
+
+<!-- ========================================================= -->
+<!-- CONTACT PAGE -->
+<!-- ========================================================= -->
+
+<section id="contact" class="page-section d-none">
+
+
+    <section class="bg-light py-5">
+
+        <div class="container text-center">
+
+            <h1 class="fw-bold">
+
+                Contact Us
+
+            </h1>
+
+            <p class="lead text-muted">
+
+                We would love to hear from you.
+                Get in touch with us!
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section class="container my-5">
+
+        <div class="row g-5">
+
+
+            <!-- CONTACT FORM -->
+
+            <div class="col-lg-7">
+
+                <div class="card shadow-sm border-0">
+
+                    <div class="card-body p-4">
+
+                        <h3 class="fw-bold mb-4">
+
+                            Send Us a Message
+
+                        </h3>
+
+
+                        <form>
+
+                            <div class="mb-3">
+
+                                <label class="form-label">
+
+                                    Full Name
+
+                                </label>
+
+                                <input type="text"
+                                       class="form-control"
+                                       placeholder="Enter your full name"
+                                       required>
+
+                            </div>
+
+
+                            <div class="mb-3">
+
+                                <label class="form-label">
+
+                                    Email Address
+
+                                </label>
+
+                                <input type="email"
+                                       class="form-control"
+                                       placeholder="Enter your email"
+                                       required>
+
+                            </div>
+
+
+                            <div class="mb-3">
+
+                                <label class="form-label">
+
+                                    Phone Number
+
+                                </label>
+
+                                <input type="tel"
+                                       class="form-control"
+                                       placeholder="Enter your phone number">
+
+                            </div>
+
+
+                            <div class="mb-3">
+
+                                <label class="form-label">
+
+                                    Subject
+
+                                </label>
+
+                                <input type="text"
+                                       class="form-control"
+                                       placeholder="Enter subject"
+                                       required>
+
+                            </div>
+
+
+                            <div class="mb-3">
+
+                                <label class="form-label">
+
+                                    Message
+
+                                </label>
+
+                                <textarea class="form-control"
+                                          rows="5"
+                                          placeholder="Write your message here..."
+                                          required></textarea>
+
+                            </div>
+
+
+                            <button type="submit"
+                                    class="btn btn-primary px-4">
+
+                                Send Message
+
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CONTACT INFORMATION -->
+
+            <div class="col-lg-5">
+
+                <h3 class="fw-bold mb-4">
+
+                    Get in Touch
+
+                </h3>
+
+                <p class="text-muted">
+
+                    If you have any questions about jobs,
+                    companies, registration or your account,
+                    feel free to contact us.
+
+                </p>
+
+
+                <div class="card border-0 shadow-sm mb-3">
+
+                    <div class="card-body">
+
+                        <h5 class="fw-bold">
+
+                            📍 Address
+
+                        </h5>
+
+                        <p class="text-muted mb-0">
+
+                            Mumbai, Maharashtra, India
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="card border-0 shadow-sm mb-3">
+
+                    <div class="card-body">
+
+                        <h5 class="fw-bold">
+
+                            📞 Phone
+
+                        </h5>
+
+                        <p class="text-muted mb-0">
+
+                            +91 98765 43210
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="card border-0 shadow-sm mb-3">
+
+                    <div class="card-body">
+
+                        <h5 class="fw-bold">
+
+                            ✉️ Email
+
+                        </h5>
+
+                        <p class="text-muted mb-0">
+
+                            support@jobportal.com
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="card border-0 shadow-sm">
+
+                    <div class="card-body">
+
+                        <h5 class="fw-bold">
+
+                            🕒 Working Hours
+
+                        </h5>
+
+                        <p class="text-muted mb-0">
+
+                            Monday - Friday: 9:00 AM - 6:00 PM
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- HOW CAN WE HELP -->
+
+    <section class="bg-light py-5">
+
+        <div class="container">
+
+            <h2 class="text-center fw-bold mb-4">
+
+                How Can We Help?
+
+            </h2>
+
+
+            <div class="row g-4">
+
+
+                <div class="col-md-4">
+
+                    <div class="card h-100 border-0 shadow-sm text-center">
+
+                        <div class="card-body">
+
+                            <h3>💼</h3>
+
+                            <h5 class="fw-bold">
+
+                                Job Related Queries
+
+                            </h5>
+
+                            <p class="text-muted">
+
+                                Need help finding or applying
+                                for a job? Contact our support team.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <div class="card h-100 border-0 shadow-sm text-center">
+
+                        <div class="card-body">
+
+                            <h3>👤</h3>
+
+                            <h5 class="fw-bold">
+
+                                Account Support
+
+                            </h5>
+
+                            <p class="text-muted">
+
+                                Get assistance with login,
+                                registration and your JobPortal account.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <div class="card h-100 border-0 shadow-sm text-center">
+
+                        <div class="card-body">
+
+                            <h3>🏢</h3>
+
+                            <h5 class="fw-bold">
+
+                                Company Support
+
+                            </h5>
+
+                            <p class="text-muted">
+
+                                Companies can contact us regarding
+                                job postings and recruitment.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer class="bg-dark text-white text-center py-4">
+
+        <div class="container">
+
+            <h5 class="fw-bold">
+
+                JobPortal
+
+            </h5>
+
+            <p class="mb-2">
+
+                Find your dream job and build your career.
+
+            </p>
+
+            <p class="mb-0">
+
+                © 2026 JobPortal. All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+</section>
+
+
+
+<!-- ========================================================= -->
+<!-- REGISTER PAGE -->
+<!-- ========================================================= -->
+
+<section id="register" class="page-section d-none">
+
+
+    <!-- REGISTER FORM -->
+
+    <section class="py-5 bg-light">
+
+        <div class="container">
+
+            <div class="row justify-content-center">
+
+                <div class="col-md-7 col-lg-6">
+
+                    <div class="card shadow border-0">
+
+                        <div class="card-body p-4 p-md-5">
+
+
+                            <div class="text-center mb-4">
+
+                                <h2 class="fw-bold">
+
+                                    Create Your Account
+
+                                </h2>
+
+                                <p class="text-muted">
+
+                                    Register on JobPortal and
+                                    find your dream job.
+
+                                </p>
+
+                            </div>
+
+
+                            <form>
+
+
+                                <div class="mb-3">
+
+                                    <label class="form-label fw-semibold">
+
+                                        Full Name
+
+                                    </label>
+
+                                    <input type="text"
+                                           class="form-control"
+                                           placeholder="Enter your full name"
+                                           required>
+
+                                </div>
+
+
+                                <div class="mb-3">
+
+                                    <label class="form-label fw-semibold">
+
+                                        Email Address
+
+                                    </label>
+
+                                    <input type="email"
+                                           class="form-control"
+                                           placeholder="Enter your email address"
+                                           required>
+
+                                </div>
+
+
+                                <div class="mb-3">
+
+                                    <label class="form-label fw-semibold">
+
+                                        Phone Number
+
+                                    </label>
+
+                                    <input type="tel"
+                                           class="form-control"
+                                           placeholder="Enter your phone number"
+                                           pattern="[0-9]{10}"
+                                           required>
+
+                                    <small class="text-muted">
+
+                                        Enter a 10-digit mobile number.
+
+                                    </small>
+
+                                </div>
+
+
+                                <div class="mb-3">
+
+                                    <label class="form-label fw-semibold">
+
+                                        Register As
+
+                                    </label>
+
+                                    <select class="form-select" required>
+
+                                        <option value="">
+
+                                            Select user type
+
+                                        </option>
+
+                                        <option value="jobseeker">
+
+                                            Job Seeker
+
+                                        </option>
+
+                                        <option value="employer">
+
+                                            Employer
+
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+
+                                <div class="mb-3">
+
+                                    <label class="form-label fw-semibold">
+
+                                        Password
+
+                                    </label>
+
+                                    <input type="password"
+                                           class="form-control"
+                                           placeholder="Create a password"
+                                           minlength="6"
+                                           required>
+
+                                </div>
+
+
+                                <div class="mb-3">
+
+                                    <label class="form-label fw-semibold">
+
+                                        Confirm Password
+
+                                    </label>
+
+                                    <input type="password"
+                                           class="form-control"
+                                           placeholder="Confirm your password"
+                                           minlength="6"
+                                           required>
+
+                                </div>
+
+
+                                <div class="form-check mb-4">
+
+                                    <input class="form-check-input"
+                                           type="checkbox"
+                                           id="terms"
+                                           required>
+
+                                    <label class="form-check-label"
+                                           for="terms">
+
+                                        I agree to the
+
+                                        <a href="#">
+
+                                            Terms & Conditions
+
+                                        </a>
+
+                                    </label>
+
+                                </div>
+
+
+                                <div class="d-grid">
+
+                                    <button type="submit"
+                                            class="btn btn-primary btn-lg">
+
+                                        Create Account
+
+                                    </button>
+
+                                </div>
+
+
+                            </form>
+
+
+                            <div class="text-center mt-4">
+
+                                <p class="mb-0">
+
+                                    Already have an account?
+
+                                    <a href="#"
+                                       onclick="alert('Login page can be added later.')"
+                                       class="text-primary fw-semibold">
+
+                                        Login Here
+
+                                    </a>
+
+                                </p>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- BENEFITS -->
+
+    <section class="container my-5">
+
+        <h2 class="text-center fw-bold mb-4">
+
+            Why Register With JobPortal?
+
+        </h2>
+
+
+        <div class="row g-4">
+
+
+            <div class="col-md-4">
+
+                <div class="card h-100 border-0 shadow-sm text-center">
+
+                    <div class="card-body">
+
+                        <h2>🔍</h2>
+
+                        <h5 class="fw-bold">
+
+                            Find Jobs
+
+                        </h5>
+
+                        <p class="text-muted">
+
+                            Search and explore job opportunities
+                            according to your skills and interests.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="card h-100 border-0 shadow-sm text-center">
+
+                    <div class="card-body">
+
+                        <h2>📄</h2>
+
+                        <h5 class="fw-bold">
+
+                            Apply Easily
+
+                        </h5>
+
+                        <p class="text-muted">
+
+                            Create your profile and apply for
+                            suitable job opportunities.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="card h-100 border-0 shadow-sm text-center">
+
+                    <div class="card-body">
+
+                        <h2>🚀</h2>
+
+                        <h5 class="fw-bold">
+
+                            Build Your Career
+
+                        </h5>
+
+                        <p class="text-muted">
+
+                            Discover new opportunities and take
+                            the next step in your career.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <footer class="bg-dark text-white text-center py-4">
+
+        <div class="container">
+
+            <h5 class="fw-bold">
+
+                JobPortal
+
+            </h5>
+
+            <p class="mb-2">
+
+                Find your dream job and build your career.
+
+            </p>
+
+            <p class="mb-0">
+
+                © 2026 JobPortal. All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+</section>
+
+
+
+<!-- ========================================================= -->
+<!-- BOOTSTRAP JAVASCRIPT -->
+<!-- ========================================================= -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+
+<!-- ========================================================= -->
+<!-- PAGE NAVIGATION JAVASCRIPT -->
+<!-- ========================================================= -->
+
+<script>
+
+function showPage(pageName) {
+
+    // Get all pages
+    let pages = document.querySelectorAll(".page-section");
+
+
+    // Hide all pages
+    pages.forEach(function(page) {
+
+        page.classList.add("d-none");
+
+    });
+
+
+    // Show selected page
+    document.getElementById(pageName).classList.remove("d-none");
+
+
+    // Scroll to top
+    window.scrollTo(0, 0);
+
+
+    // Close mobile navbar
+    let navbar = document.getElementById("navbarSupportedContent");
+
+    if (navbar.classList.contains("show")) {
+
+        let bsCollapse = bootstrap.Collapse.getInstance(navbar);
+
+        if (bsCollapse) {
+
+            bsCollapse.hide();
+
+        }
+
+    }
+
+}
+
+</script>
+
+
+</body>
+
+</html>
+```
